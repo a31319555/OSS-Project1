@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 34px;
+    color: #F24444;
+    margin: 40px;
+}
+
+.form {
+    margin: 40px;
+    width: 70%;
+    height: 40px;
+}
+
+.form input{
+    width: 100%;
+    height: 100%;
+}
