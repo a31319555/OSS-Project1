@@ -129,6 +129,19 @@
           </section>
          
           </article>
+
+        <div id="map" style="width:500px;height:300px;">
+          </div>
+
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b47a795b1c07dd3b116e5e0065cdf4ba">
+          </script>
+
+        <script>
+          var container = document.getElementById('map');
+          var options = {center: new kakao.maps.LatLng(37.050701, 127.570667),level: 10};
+          var map = new kakao.maps.Map(container, options);
+          </script>
+
       <footer>
         <h1> 선문대학교   </h1>
         <p> 컴퓨터공학과  홍성호<p>
