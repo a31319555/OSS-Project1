@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 34px;
+    color: #F2D06B;
+    margin: 40px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.link a{
+    color: #F2D06B;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.link li{
+    list-style: none;
+}
+
+.form {
+    margin: 70px;
+    height: 49px;
+    width: 90%;
+}
+
+.form input{
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    color : #F2D06B;
+}
+
+.img1 {
+    width: 48%;
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img2 {
+    width: 9%;
+    position: absolute;
+    top: 70%;
+    left: 84%;
+}
+
+
+footer ul{
+color: #F2D06B;
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    background:#292A0A;
+    text-align: center;
+    list-style: none;
+   
+    font-size: 25px;
+}
