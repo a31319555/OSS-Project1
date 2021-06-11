@@ -6,17 +6,17 @@
     <title> weather </title>
    
     <style>
-      *{margin: 0px ; padding:0px;}
-        ul{list-style: none;}
-      a{text-decoration:none;}
-      
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
       header{
-           width:1200px;
-           height: 95x;
-       background-image:url("https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_1280.jpg");
+       
+       background-color: white;
           position: relative;
         border: 3px solid black;
-        color: white;
+      
   
       
          }
@@ -24,37 +24,43 @@
       
       
      
-      #logo {
-      position : absolute;
-          top: 30px;
-          left: 30px;
-    }
+  .logo {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 34px;
+    color: #F24444;
+    margin: 40px;
+}
       
-        #top_menu {
-          
-          position : absolute;
-          top: 20px;
-          right: 10px;
-          color: white;
+     nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Gochi Hand', cursive;
+}
+
+.link{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.link a{
+    color: #F24444;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.link li{
+    list-style: none;
+}
+
       
-    }
-      #top_menu a{ color: black;}
+ 
       
-      
-      nav{
-        
-        bottom: 10px;
-        left: 220px;
-        font-size: 16px;
-      }
-      
-      nav li{
-        
-        display: inline;
-            margin-left: 60px;
-        
-          font-size: 30px;
-      }
+   
       
       section {
       width:200px;
@@ -77,8 +83,8 @@
           clear:both;
       }
       header, nav, section, footer { text-align:center; }
-    header, footer { line-height:100px; }
-    nav, section { line-height:240px; }
+   
+  section { line-height:240px; }
       #page{width:1200px; margin:0px auto;
       }
       #sub
@@ -91,6 +97,7 @@
       border: 3px solid #00BFFF;
       margin-left: 370px;
     }
+
   </style>
   </head>
   
@@ -104,10 +111,14 @@
      
        
         <nav>
-        <ul>
-           <li><a href= "#"> 메인페이지 </a></li>   
-           <li><a href= "#"> 날씨 정보 </a> </li>
-           <li><a href= "#"> 지도 정보 </a> </li>
+		<div class = 'logo'>
+    <h1>weather</h1>
+    <h5>open source software project</h5>
+</div>
+       <ul class = 'link'>
+           <li><a href= "home.html"> main </a></li>   
+           <li><a href= "search.html"> search </a> </li>
+           <li><a href= "t1.php"> map </a> </li>
         </ul>
       </nav>
       
@@ -122,7 +133,7 @@
         <section id="main">
           
           
-<div id="map" style="width:1200px;height:600px;"></div>
+<div id="map" style="width:1200px;height:700px;"></div>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=98ca33e79c663ac59d91b0a8cb887c6b"width="33" height="30"></script>
 	<script>
 		var container = document.getElementById('map');
@@ -944,4 +955,5 @@ kakao.maps.event.addListener(marker, 'click', function() {
       
     </div>
   </body>
+  
 </html>
